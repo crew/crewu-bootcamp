@@ -1,0 +1,22 @@
+This covers all the material you would want to cover in a "basic" tutorial / guide to using linux
+
+Has a nice table of commands & their use at the end of each section
+
+Things it does not cover:
+    dotfiles
+    minimal coverage of find
+    covers grep, not egrep
+    popd
+    sudo !!
+    who SU is
+    screen
+    text editors
+
+Things it does cover
+    gzip
+    du (-hs)
+    chomod (not chown)
+
+
+overall quite comprehensive, very good starting point.
+

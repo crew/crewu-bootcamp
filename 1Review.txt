@@ -1,0 +1,25 @@
+ - What were the topics they did not cover you wanted to see
+
+ - Would you prefer it to be more / less interactive
+I wish it was possible to try typing commands, or add flags to comand.
+
+ - What was better
+        - New Feature(s)?
+          - An image of the actual command is displayed how it would look in the terminal.
+        
+        - Old content, better Presentation?
+          - One thing that was better was the examples it displays commands being called.
+          - The other nice feature is just having a nice and easy explanation of what the command is. ex
+"cd $DIR
+change directory. Changes the current working directory to the directory $DIR. In effect, moves you around the computer."
+
+ - What was worse
+         - I dislike how the only thing ever put in the example is "$dir" instead of an example directory
+
+        - Did Bootcamp cover this content?
+          - All of this content was covered in the first class.
+
+- Interesting Feature(s)? Diagrams, doodles etc?
+          - at the bottom it gives two pieces of code that should never be run, and explains what they are and why they should never be run.
+
+http://www.davidbaumgold.com/tutorials/command-line/#warnings
