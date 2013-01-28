@@ -1,0 +1,15 @@
+Nice graphic detailing how to interpret the ls -la output
+
+Goes through Regex rather early
+Quite good coverage of misdirection >, >>, | of std out
+Table of commands & their results (add some common flags as subtable?)
+
+Good coverage of chmod & the bits and how to modify the file permissions
+
+Covered JOb control, something bootcamp did not
+
+Covers how to write shell scripts:
+  not something covered in any significant detail in bootcamp
+  important advanced topic we should cover
+
+
