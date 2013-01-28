@@ -7,10 +7,8 @@
       function displayTutorial(tutnumber)
       {
         var tutfilename = "t" + tutnumber + ".html";
-        alert(tutfilename);
         $.get(tutfilename, function(data)
         {
-          alert(data);
           $("p").html(data);
         });
       }
