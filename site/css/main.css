@@ -72,11 +72,29 @@ img.cover {
 	display: block;
 }
 
+h1.title {
+	display: inline-block;
+	width: 50%;
+}
 
 #left_col {
 	width: 300px;
 	display: inline-block;
 	vertical-align: top;
+	min-height: 100%;
+}
+
+#left_col h1 {
+	text-align: center;
+}
+
+
+#left_col > ol {
+	margin-left: 20px;
+}
+
+#left_col ol > ol {
+	list-style-type: lower-alpha;
 }
 
 #right_col {
