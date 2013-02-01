@@ -1,0 +1,18 @@
+Linux Guides
+1.Richard Van Buren -- DONE
+http://www.davidbaumgold.com/tutorials/command-line/
+2.Jonathan Goodwin
+http://linuxcommand.org/lts0010.php
+3.
+http://www.cyberciti.biz/tips/understanding-unixlinux-file-system-part-i.html
+4.
+http://www.vps.net/blog/2012/07/03/command-line-basics-part-1-moving-around-the-file-system/
+http://www.vps.net/blog/2012/08/13/command-line-basics-part-2-unix-file-system/
+5.Jonathan Goodwin -- DONE
+http://www.ee.surrey.ac.uk/Teaching/Unix/
+6.
+http://www.linux.org/tutorial
+
+In Depth Video Guides
+http://drupalize.me/series/command-line-basics-series
+
