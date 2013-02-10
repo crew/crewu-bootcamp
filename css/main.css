@@ -1,0 +1,32 @@
+#topwrapper {
+	text-align: center;
+	padding-top: 30px;
+}
+
+.content {
+	text-align: left;
+}
+
+.nav {
+	list-style-type: decimal;
+}
+
+.nav li > a {
+	margin-left: 0px;
+}
+
+#bar {
+	width: 100%;
+	background-color: #000;
+	position: fixed;
+	min-height: 20px;
+}
+
+#bar p {
+	display: inline-block;
+	color: #EEE;
+}
+
+#inside_bar {
+	position: relative;
+}
