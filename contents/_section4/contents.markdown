@@ -17,8 +17,8 @@ another, allowing us to make use of that computer's filesystem as part of our
 own. For example lets say we wished to copy a file from our laptop to a computer
 within the lab so you can hand it in for homework?
 
-### scp [flag] <username>@<hostname>:<from file path> <username>@<hostname>:<to
-file path>
+### scp [flag] < username >@< hostname >:< from file path > < username >@< hostname >:< to
+file path >
 #### Used for:
     Coping files between computers over a network using ssh.
 #### Flags:
