@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta char-set="utf-8">
+	<title>CrewU</title>
+	{{#stylesheet_bundle}}/css/all.css{{/stylesheet_bundle}} 
+</head>
+<body>
+	<div id="bar">
+			<p>CCIS Experimental Systems Group</p>
+			<p style="position:absolute;right:0;">Learn You A Linux</p>
+	</div>
+
+	<div id="topwrapper" class="container">
+			<a href="/"><img class="cover" src="learnyoualinux.png" /></a>
+			<div class="span12-fluid">
+
+				<div class="span2 content">
+					<ol class="nav nav-list">
+						{{#nav_bar}}
+						<li><a href="{{url}}">{{item}}</a></li>
+						{{/nav_bar}}
+					</ol>
+				</div>
+				<div class="span9 content">
+					<p>{{{contents}}}</p>
+				</div>
+			</div>
+	</div>
+</body>
+</html>

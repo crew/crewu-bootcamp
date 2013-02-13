@@ -1,0 +1,22 @@
+6. Configs
+a. Different Shells
+- Bash
+The standard shell that is installed on most computers. You can install various other shell, with another popular one being z shell. Bash provides the interface for you interact with your computer. The standard set-up is a left-side prompt that ends in dollar sign ($). You can customize how your shell looks, by changing the way your directories appear, if there’s a right prompt, color, etc. Changes you want to make can be found in the .bashrc file found in your home (~) directory. 
+- Zsh
+http://www.zsh.org/
+http://en.wikipedia.org/wiki/Z_shell
+https://github.com/robbyrussell/oh-my-zsh
+Z shell (also known as zsh) is another shell that is available. It features things such as displaying auto-completion prompts and other cool hacks. Check out the websites for more info.
+7. Sudo
+a. The first rule of sudo is don’t sudo. Sudo the first rule of sudo is to sudo. 
+Sudo allows you to act as the “root” user when interacting in your shell. The “root” user is your computer. It controls permissions over everything, and is the ultimate voice of authority over anything your computer does. It is actually possible to login as a root user, and when you are acting as root your prompt will change to have a hash (#). 
+Sudo is a useful command for those wishing to make changes to configuration files that are normally hidden from view and not editable. If you go to the root directory (/) and do a “ls –la” you’ll see that most of the files are owned by the “root” user and are lacking write permissions. These files are protected by root because they are normally things that make your computer run, such as background process that you probably don’t want to mess with unless you want to fuck things up big time. 
+8. Apt-get
+a. apt-get is a useful Linux command that is used for getting packages to install on Linux. It’s really simple. Apt-get install cowsay. It will prompt you to confirm the amount of space it will use, run an install script, and BAM. You just installed a program on Linux.
+9. Shell scripting
+Ever wanted to automate something? Run a bunch of tests all at once? That’s where shell scripting comes in. You can write your own series of commands that will execute and take your programming to a whole new lever. You’ll be super cool.
+10. Screen/tmux
+Sick of tabs? Or are you using a shell environment that doesn’t support them? Welcome to the world of screen. Screen gives you different windows within the same development environment. You can work on running multiple processes all from the same shell. It’s great if you’re running a command that takes a lot of time to execute and you still want to do some more stuff.
+11. LAMP
+Linux. Apache. MySQL. PHP. Learn them all. Love them dearly. 
+
