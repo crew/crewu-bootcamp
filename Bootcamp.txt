@@ -1,0 +1,121 @@
+1. FileSystems
+1.1 Introduciton to filesystems, a few facts:
+  1) There are 2 things, Files and Folders.
+  2) These are arranged in a "tree" structure with folders containing more files & folders.
+  3) The root folder is located at "/".
+  4) A filepath is the list of folders needed to arrive at a particular point in the tree:
+    "/home/fakeuser/documents/classes/"
+  5) Your home directory is located at "/home/user".
+     A shortcut for this is to use "~".
+
+1.2 A couple more things:
+  1) Adding a drive (USB, or other) to a filesystem is called "mounting" this just means that you add the drive as another branch on your tree at some point in the tree.
+  2) Full paths are paths that start at the "root" of the filesystem ("/") and then go from there (you can use "~" to abreviate if you would like.
+  3) Relative filepaths are ones that start at the directory you are in and go on from there.
+  4) Unix filesystems have 2 folders inside every folder "." and ".." these are "this folder" and "the folder above" respectively. these are very helpful when needing to refer to folders or files that are near your current location in the filesystem.
+  5) Unix filesystems hide files and folders from "normal" view by putting a "." at the begining of the name like this: ".config"
+
+1.3 Other good to know things:
+  Commands have flags, such as "-a" or "-r" these can be combined "-avz" or used sepparately "-avz -e" these flags alter the way that commnads you enter into your terminal opperate.
+  Shells:
+  There are several different shells that provide additional functionality to your linux experiance such as "tab completion" of commands and prompts, we will go into greater detail about shells later.
+
+
+2. Basic Linux Commands
+NOTE on notation:
+command [flags can go here] <mandatory argument> [optional argument]
+arguments and flag groups are sepparated by spaces
+
+
+  ls [filepath]
+  Used for:
+    To list the contents of directories. Can be used on other directories, assumes you mean this one if no directory given.
+  Flags:
+    -a Lists all files (including hidden)
+    -l Does the long output, listing permissions owner and size
+    -h Makes output "human readable" (adjusts sizes from bytes to K, M, G etc.)
+    -R Enables recursion into directories
+
+  mkdir [file path/] <directory name>
+  Used for:
+    Making a directory.
+  Flags:
+
+  cd <file path>
+  Used to change the directory you are currently in to the given one. Takes full or relative path
+  Flags:
+
+  touch [file path/] <file name>
+  Used for:
+    Creation of files.
+  Flags:
+
+  rm [flags] <file or directory>
+  Used for:
+    Removing files or directories.
+  Flags:
+    -r Recurs down into directories
+    -f Force, ignores any complaints etc (will delete directories)
+    -v Verbose, lists delted directories.
+
+  mv [Path]<file or directory name> [path]<file or directory name>
+  Used for:
+    Copies the first file/direcotry and then places it in the second location.
+  Flags:
+
+  cp [Path]<file or directory name> [path]<file or directory name>
+  Used for:
+    Copying files.
+  Flags:
+    -r Activates recusion.
+
+3. Text Editors
+
+  There are two main editors available for use through your terminal. Generally they are based around the same concepts of providing you with easier text editing through the use of shortcuts and macros.
+  The two main editors are Vim and Emacs. There is a large dispute over which one to use, which is "better" and so on. Rather than dive into that discussion here I suggest you try out the "tutorial programs" of both and then pick one to learn and use on a regular basis.
+  To run the vimtutor simply log in to a linux/unix machine and type in vimtutor and follow the instrucitons.
+  To run the emacs tutorial, open emacs and figure it out.
+
+4. ssh / scp / rsync
+
+  In a previous section we went over how to copy files from one place on your computer to another. Now what about over a network? Well first you will need to connect to another computer:
+
+  ssh <username>@<hostname>
+  Used for:
+    Establishing a "secure shell" on another computer. You will be logged into that computer, using a shell on that computer.This allows you to do work on that computer remotely, as well as access resources on that computer's network that may not be on the network you are currently on.
+  Flags:
+
+  ssh is important because it allows us to connect ourselves from one computer to another, allowing us to make use of that computer's filesystem as part of our own. For example lets say we wished to copy a file from our laptop to a computer within the lab so you can hand it in for homework?
+
+  scp [flag] <username>@<hostname>:<from file path> <username>@<hostname>:<to file path>
+  Used for:
+    Coping files between computers over a network using ssh.
+  Flags:
+    -r Enables recursion into directories.
+
+  example:
+    scp user@host:~/classes/homework.txt .
+    This would copy from the classes folder in "user"'s home directory a file called "homework.txt" to "." or the same location that the user was in when they executed the command.
+    scp ~/documnets/classes/homework/hw1.java user@host:/classes/classname/handin
+    This would move a file from a folder in the User's home directory on the local machine to a remote directory on the host located at "/classes/classname/handin"
+
+  rsync
+  Used for:
+    Moving large files accross a netowrk or maintaining backups. Rsync provides a utility for mainting the owner and last accessed timestamps on files even if it is copying them over a network.
+  Flags:
+  -e Enable command line option such as ssh
+  -a Enable archive mode (preserve timestamps)
+  -v Verbose, list everything
+  -z Compresses data so that transfer goes quicker
+  --progress Enable progress bar
+
+5. Git
+  Software versioning! Git is a way of managing software versions between multiple parties working on the same code, as well as keeping revision information of all the files so that you can reset back to a previous state if someone adds in a bug.
+
+  Go to http://try.github.com follow the tutorial, make an account and then fork our repo github.com/crew/learn-crewu and play with the goodies in there.
+
+
+
+
+
+
