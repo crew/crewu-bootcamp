@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 
 <head>
+  <link href="../css/frontpage.css" type="stylesheet">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+    // load the header & basic content
+    $(document).ready(function(){
+      $("#head").load("header.html");
+      $("#content").load("../content/test_content.html");
+    });
+  </script>
 </head>
 <body>
+  <div id="head"> </head>
+  <div id="content"> </div>
 </body>
 
