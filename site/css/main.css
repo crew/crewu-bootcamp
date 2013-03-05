@@ -1,0 +1,43 @@
+#box1, #box2, #box3 {
+  background-color:white;
+  border-radius: 5px;
+  padding:20px;
+  -webkit-box-shadow: 5px 5px 5px #999;
+}
+.container{
+  text-align:center;
+}
+.well{
+  -webkit-box-shadow: 5px 5px 5px #999;
+  margin-bottom:0px;
+}
+body{
+  background-color:#ddd;
+}
+h3 a {
+  margin-left: 30px;
+}
+#nav {
+  background-color: #eee;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 5px #999;
+}
+.span5{
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.span9{
+  margin-left: 25%;
+  margin-right: 25%;
+}
+#content_box{
+  background-color:white;
+  text-align:left;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 5px #999;
+}
+#hide{
+  float:right;
+}
