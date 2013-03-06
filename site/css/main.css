@@ -1,11 +1,11 @@
-// css for boxes on front page
+/* css for boxes on front page*/
 #box1, #box2, #box3 {
   background-color:white;
   border-radius: 5px;
   padding:20px;
   -webkit-box-shadow: 0px 2px 2px #888;
 }
-// asjusting bootstraps container css
+/* asjusting bootstraps container css*/
 .container{
   text-align:center;
 }
@@ -21,11 +21,11 @@
 body{
   background-color:#ddd;
 }
-// for links in the titlebar etc- need some spacing on those
+/* for links in the titlebar etc- need some spacing on those*/
 h3 a {
   margin-left: 30px;
 }
-// navbar css for the basic_layout page,
+/* navbar css for the basic_layout page,*/
 #nav {
   background-color: #eee;
   margin-bottom: 30px;
@@ -33,7 +33,7 @@ h3 a {
   border-radius: 5px;
   -webkit-box-shadow: 0px 2px 2px #888;
 }
-// adjusting the span classes so that they center on the page
+/* adjusting the span classes so that they center on the page*/
 .span5{
   margin-left: 25%;
   margin-right: 25%;
@@ -42,7 +42,7 @@ h3 a {
   margin-left: 25%;
   margin-right: 25%;
 }
-// this is the center box on the basic_layout page that the 'learing stuff' goes in
+/* this is the center box on the basic_layout page that the 'learing stuff' goes in*/
 #content_box{
   padding-bottom:50px;
   background-color:white;
@@ -50,20 +50,19 @@ h3 a {
   border-radius: 5px;
   -webkit-box-shadow: 0px 2px 2px #888;
 }
-// this is the css to make the 'hide' buttons go to the right
+/* this is the css to make the 'hide' buttons go to the right*/
 #hide{
   float:right;
 }
-// css to make the stuff inisde a content box, that is not a heading get indented
+/* css to make the stuff inisde a content box, that is not a heading get indented*/
 #content_box h3, #content_box p, #content_box ul li{
   margin-left:50px;
 }
-// we also want the sub headers to be colored differently
+/* we also want the sub headers to be colored differently*/
 #content_box h3 {
   color:#888;
 }
-// the content boxs lists should look different (be hidden?) 
-// this gives them the "normal" .well css
+/* the content boxs lists should look different (be hidden?) this gives them the "normal" .well css*/
 #content_box ul {
   min-height: 20px;
   padding: 19px;
@@ -75,7 +74,7 @@ h3 a {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-// if there is no link this class greys the color on the link
+/* if there is no link this class greys the color on the link */
 .no_link{
   color:#bbb;
 }
