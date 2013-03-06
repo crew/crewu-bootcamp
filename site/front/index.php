@@ -61,7 +61,8 @@
     <div class="row" id="box_container" style="margin:auto;">
       <!-- box -->
       <div class="span3" id="box1">
-        <a href="basic_linux_template.html"><h2>Basics of Linux</h2></a>
+        <a href="basic_linux_template.php?page=1"><h2>Basics of Linux</h2></a>
+        <!-- ideally there should be a splash page here -->
         <small>This is where to go if you are looking for an introduction to a Linux user experiance.</small>
       </div>
 

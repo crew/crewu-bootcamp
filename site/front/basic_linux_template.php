@@ -17,13 +17,13 @@ $title = "Section ".$page;
 // sort out the fwd /back buttons & thier pathing
 // the back button
 if(intval($page)>1){
-  $backpath = "href=\"http://crewu.jwg.io/front/basic_linux_template.php?page=".(intval($page)-1)."\"";
+  $backpath = "href=\"http://crewu.jwg.io/site/front/basic_linux_template.php?page=".(intval($page)-1)."\"";
 }else{
   $backpath="href=\"#\" class=\"no_link\"";
 }
 // the front button
 if(intval($page)<12){
-  $frontpath = "href=\"http://crewu.jwg.io/front/basic_linux_template.php?page=".(intval($page)+1)."\"";
+  $frontpath = "href=\"http://crewu.jwg.io/site/front/basic_linux_template.php?page=".(intval($page)+1)."\"";
 }else{
   $frontpath="href=\"#\" class=\"no_link\"";
 }
