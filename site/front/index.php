@@ -83,9 +83,7 @@
 
   <!-- our footer -->
   <div class="container" id="foot">
-    <div class="row"> 
       <!-- footer included by php -->
       <?php include "footer.html"?>
-    </div>
   </div>
 </body>
