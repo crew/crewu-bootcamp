@@ -1,0 +1,17 @@
+7. Sudo
+=======
++ The first rule of sudo is don't sudo. Sudo the first rule of sudo is to sudo. 
+Sudo allows you to act as the "root" user when interacting in your shell. The
+"root" user is your computer. It controls permissions over everything, and is
+the ultimate voice of authority over anything your computer does. It is actually
+possible to login as a root user, and when you are acting as root your prompt
+will change to have a hash (#). Being the root user is occasionally helpful when
+you need to install programs, in that case you don't want to log in as the
+root user, but just borrow its powers.
+
++ Sudo is a useful command for those wishing to make changes to configuration
+  files that are normally hidden from view and not editable. If you go to the
+root directory (/) and do a "ls" "-la" you will see that most of the files are owned
+by the "root" user and are lacking write permissions. These files are protected
+by root because they are normally things that make your computer run, such as
+background process that you probably don't want to mess with unless you want to brick your computer.
