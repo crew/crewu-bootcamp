@@ -8,20 +8,24 @@ this should just be a matter of getting the section number, adding it to some st
 after that you should just be able to do the back/fwd links by some "subtraction" and do the content includes by just getting that file
  */
 
-
+// get our page number
 $page = $_GET["page"];
+// get the path to our html for this session
 $path = "../content/section".$page.".html";
-
+// section title
+$title = "Section ".$page;
+// sort out the fwd /back buttons & thier pathing
+// the back button
 if(intval($page)>1){
   $backpath = "href=\"http://crewu.jwg.io/front/basic_linux_template.php?page=".(intval($page)-1)."\"";
 }else{
-    $backpath="";
+  $backpath="href=\"#\" class=\"no_link\"";
 }
-
+// the front button
 if(intval($page)<12){
   $frontpath = "href=\"http://crewu.jwg.io/front/basic_linux_template.php?page=".(intval($page)+1)."\"";
 }else{
-    $frontpath="";
+  $frontpath="href=\"#\" class=\"no_link\"";
 }
 ?>
 <head>
@@ -35,12 +39,11 @@ if(intval($page)<12){
     </div>
   </div>
 
-
   <div class ="container">
     <div class="span5" id="nav" style="text-align:center">
-    <h5 style="display: inline-block;"><a <?php echo $backpath?>>Back</a></h5>
-      <h4 style="display: inline-block; margin-right: 50px; margin-left: 50px;"> Title </h4> 
-      <h5 style="display:inline-block;"><a <?php echo $frontpath?>> Forward</a></h5>
+    <h5 style="display: inline-block;"><i class="icon-chevron-left"></i><a <?php echo $backpath?>>Back</a></h5>
+    <h4 style="display: inline-block; margin-right: 50px; margin-left: 50px;"><?php echo $title?> </h4> 
+      <h5 style="display:inline-block;"><a <?php echo $frontpath?>> Forward<i class="icon-chevron-right"></i></a></h5>
     </div>
   </div>
 
@@ -48,6 +51,8 @@ if(intval($page)<12){
     <div class="row">
       <div class="well" id="content_box">
         <?php include $path ?>
+          <h5 style="float:left; display: inline-block;"><i class="icon-chevron-left"></i><a <?php echo $backpath?>>Back</a></h5>
+          <h5 style="float:right; display:inline-block;"><a <?php echo $frontpath?>> Forward<i class="icon-chevron-right"></i></a></h5>
       </div>
     </div>
   </div>
@@ -55,6 +60,4 @@ if(intval($page)<12){
   <div class ="container">
     <?php include "footer.html"?>
   </div>
-
-
 </body>
