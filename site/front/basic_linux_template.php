@@ -11,19 +11,21 @@ after that you should just be able to do the back/fwd links by some "subtraction
 // get our page number
 $page = $_GET["page"];
 // get the path to our html for this session
-$path = "../content/section".$page.".html";
+$path = "../content/bootcamp/section".$page.".html";
 // section title
 $title = "Section ".$page;
 // sort out the fwd /back buttons & thier pathing
 // the back button
 if(intval($page)>1){
   $backpath = "href=\"http://crewu.ccs.neu.edu/site/front/basic_linux_template.php?page=".(intval($page)-1)."\"";
+  //$backpath = "href=\"http://crewu.jwg.io/site/front/basic_linux_template.php?page=".(intval($page)-1)."\"";
 }else{
   $backpath="href=\"#\" class=\"no_link\"";
 }
 // the front button
 if(intval($page)<12){
   $frontpath = "href=\"http://crewu.ccs.neu.edu/site/front/basic_linux_template.php?page=".(intval($page)+1)."\"";
+  //$frontpath = "href=\"http://crewu.jwg.io/site/front/basic_linux_template.php?page=".(intval($page)+1)."\"";
 }else{
   $frontpath="href=\"#\" class=\"no_link\"";
 }
