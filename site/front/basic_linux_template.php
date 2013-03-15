@@ -35,8 +35,8 @@ if(intval($page)<12){
   <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-  <div class="container" id="head" >
-    <!-- head included by php, delete this html when done -->
+  <div class ="container">
+    <div class="row">
       <?php include "header.html" ?>
     </div>
   </div>
