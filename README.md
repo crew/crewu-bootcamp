@@ -17,12 +17,12 @@ Make those things also cookie themselves so people dont have to re-hide things a
 
 Categories
 ==========
-Basic user linux
-Advanced user linux
+Basic user linux  
+Advanced user linux  
+  
+Basic admin linux (your own system)  
+Server admin linux (ie Infrastrcrtuer p1)  
+(maybe) more infrastrcutre  
 
-Basic admin linux (your own system)
-Server admin linux (ie Infrastrcrtuer p1)
-(maybe) more infrastrcutre
-
-Webdev #ali
+Webdev #ali  
 
