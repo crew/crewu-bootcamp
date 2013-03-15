@@ -9,6 +9,21 @@
 .container{
   text-align:center;
 }
+#box1{
+  float:left;
+  margin-left:0px;
+}
+
+#box2{
+  margin-left:65px;
+  margin-right:65px;
+}
+#box3{
+  margin-right:30px;
+  margin-left:0px;
+  float:right;
+}
+
 /* I am using the default well class to create boxes...
  * this adjusts them so that the drop shadow works that wau
  * below we have a class with the normal .wells css re-included
