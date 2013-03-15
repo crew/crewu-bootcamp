@@ -41,11 +41,13 @@ if(intval($page)<12){
     </div>
   </div>
 
-  <div class ="container">
-    <div class="span5" id="nav" style="text-align:center">
-    <h5 style="display: inline-block;"><i class="icon-chevron-left"></i><a <?php echo $backpath?>>Back</a></h5>
-    <h4 style="display: inline-block; margin-right: 50px; margin-left: 50px;"><?php echo $title?> </h4> 
-      <h5 style="display:inline-block;"><a <?php echo $frontpath?>> Forward<i class="icon-chevron-right"></i></a></h5>
+  <div class ="row">
+    <div class="container">
+      <div  id="nav" style="text-align:center">
+        <h5 style="display: inline-block;"><i class="icon-chevron-left"></i><a <?php echo $backpath?>>Back</a></h5>
+        <h4 style="display: inline-block; margin-right: 50px; margin-left: 50px;"><?php echo $title?> </h4> 
+        <h5 style="display:inline-block;"><a <?php echo $frontpath?>> Forward<i class="icon-chevron-right"></i></a></h5>
+      </div>
     </div>
   </div>
 
