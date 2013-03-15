@@ -21,10 +21,12 @@ $title = "Table of Contents";
   <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
+  <div class="row">
   <div class="container" id="head" >
     <!-- head included by php, delete this html when done -->
       <?php include "header.html" ?>
     </div>
+  </div>
   </div>
 
   <div class ="container">
