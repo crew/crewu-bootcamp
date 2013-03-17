@@ -11,6 +11,7 @@ after that you should just be able to do the back/fwd links by some "subtraction
 // get our page number
 $index = $_GET["index"];
 // get the path to our html for the table of contents
+$dir = "../content/".$index."/";
 $path = "../content/".$index."/index_page.html";
 // section title
 $title = "Table of Contents";
@@ -39,7 +40,8 @@ $title = "Table of Contents";
   <div class="container">
     <div class="row">
       <div class="well" id="content_box">
-        <?php include $path ?>
+        <?php $dirsize = count(scandir($dir));
+              echo $dirsize-2;?>
       </div>
     </div>
   </div>
