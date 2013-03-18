@@ -11,6 +11,7 @@ after that you should just be able to do the back/fwd links by some "subtraction
 // get our page number
 $index = $_GET["index"];
 // get the path to our html for the table of contents
+$dir = "../content/".$index."/";
 $path = "../content/".$index."/index_page.html";
 // section title
 $title = "Table of Contents";
@@ -21,8 +22,9 @@ $title = "Table of Contents";
   <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-  <div class="row">
   <div class="container" id="head" >
+
+  <div class="row">
     <!-- head included by php, delete this html when done -->
       <?php include "header.html" ?>
     </div>
@@ -38,7 +40,35 @@ $title = "Table of Contents";
   <div class="container">
     <div class="row">
       <div class="well" id="content_box">
-        <?php include $path ?>
+        <?php
+          $exclude_list = array(".", "..");
+          $shortlist = array();
+          $longlist = array();
+          $dir_array = array_diff(scandir($dir), $exclude_list);
+          sort($dir_array);
+          $dir_length = count($dir_array)-2;
+          $i=0;
+
+          foreach($dir_array as &$item){
+            // if the string is a 2 number string...:
+            if(strlen($item) == 14){
+              array_push($longlist, $item);
+            }else{
+              array_push($shortlist, $item);
+            }
+          }
+          $result = array_merge($shortlist, $longlist);
+
+          foreach ($result as &$value) {
+            $cmd = "head -n 1 ../content/bootcamp/".$value;
+            $output = shell_exec($cmd);
+            //echo "<a href=\"basic_linux_template.php?page=1>".$output."</a>";
+            $i++;
+            echo "<a href=\"basic_linux_template.php?page=".$i."\">";
+            echo $output;
+            echo "</a><br>";
+          }
+        ?>
       </div>
     </div>
   </div>

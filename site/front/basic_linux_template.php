@@ -7,7 +7,8 @@ the page that we are looking for... but probably not the one we deserve
 this should just be a matter of getting the section number, adding it to some strings to create links to files
 after that you should just be able to do the back/fwd links by some "subtraction" and do the content includes by just getting that file
  */
-
+$dir = "../content/bootcamp/";
+$dirsize = count(scandir($dir))-2;
 // get our page number
 $page = $_GET["page"];
 // get the path to our html for this session
@@ -22,7 +23,7 @@ if(intval($page)>1){
   $backpath="href=\"#\" class=\"no_link\"";
 }
 // the front button
-if(intval($page)<12){
+if(intval($page)+1<$dirsize){
   $frontpath = "href=\"/site/front/basic_linux_template.php?page=".(intval($page)+1)."\"";
 }else{
   $frontpath="href=\"#\" class=\"no_link\"";
