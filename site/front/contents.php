@@ -40,8 +40,35 @@ $title = "Table of Contents";
   <div class="container">
     <div class="row">
       <div class="well" id="content_box">
-        <?php $dirsize = count(scandir($dir));
-              echo $dirsize-2;?>
+        <?php
+          $exclude_list = array(".", "..");
+          $shortlist = array();
+          $longlist = array();
+          $dir_array = array_diff(scandir($dir), $exclude_list);
+          sort($dir_array);
+          $dir_length = count($dir_array)-2;
+          $i=0;
+
+          foreach($dir_array as &$item){
+            // if the string is a 2 number string...:
+            if(strlen($item) == 14){
+              array_push($longlist, $item);
+            }else{
+              array_push($shortlist, $item);
+            }
+          }
+          $result = array_merge($shortlist, $longlist);
+
+          foreach ($result as &$value) {
+            $cmd = "head -n 1 ../content/bootcamp/".$value;
+            $output = shell_exec($cmd);
+            //echo "<a href=\"basic_linux_template.php?page=1>".$output."</a>";
+            $i++;
+            echo "<a href=\"basic_linux_template.php?page=".$i."\">";
+            echo $output;
+            echo "</a><br>";
+          }
+        ?>
       </div>
     </div>
   </div>
