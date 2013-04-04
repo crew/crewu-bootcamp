@@ -64,9 +64,9 @@ $title = "Table of Contents";
             $output = shell_exec($cmd);
             //echo "<a href=\"basic_linux_template.php?page=1>".$output."</a>";
             $i++;
-            echo "<a href=\"basic_linux_template.php?page=".$i."\">";
+            echo "<h5><a href=\"basic_linux_template.php?page=".$i."\">";
             echo $output;
-            echo "</a><br>";
+            echo "</a></h5><br>";
           }
         ?>
       </div>
