@@ -21,8 +21,8 @@
         <p class="lead" style="display:inline-block;"> What is CrewU? </p>
         <button class="btn small" id="hide" style="display: inline-block;"> hide </button>
         <div id ="contents">
-          <!-- 
-          ideally this should be in another html file and just <?php include 'ed' ?>
+          <!--
+          ideally this should be in another html file and just php include 'ed'
           The tagging should be the same however
           -->
           <?php include "frontpageContents.html"?>
