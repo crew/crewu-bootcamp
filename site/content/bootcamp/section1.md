@@ -1,27 +1,28 @@
 # 1. Intro to the Terminal
 
-# 1.1 What is a Terminal
+# 1.1 What is a Terminal (AKA you can skip this if you have ever used one before)
 
-Shells are interactive text based programs for running a computer. Its what you have when there is no GUI.
+A terminal&mdash;in the simplest sense&mdash;is what text based applications run in;
+It displays all text you see on the screen.
+When a terminal first starts it usually launches into an application called a shell&mdash;an interactive text based program meant for running a computer by reading in commands the user types in. 
+The shell continually reads in the text you type and evaluates it as an instruction.
 Programs that are meant to be run from a shell are call "command-line applications."
 
-Terminals&mdash;in the simplest sense&mdash;are what shells execute in. They are what displays all text you see on the screen.
+A typical shell looks something like this:
 
-When you start a terminal is open it launches a shell. A typical shell looks something like this:
-
-  username@host:directory$ this-is-the-command with-arg-1 and-arg-2
+        username@host:directory$ this-is-the-command with-arg-1 and-arg-2
 
 When the user presses enter, the command is executed, and its output is printed to the screen.
 
-The `username@host:directory$` is called the prompt. 
+The `username@host:directory$` portion is called the prompt. It is completely customizable, so it may wind up looking completely different. (At the moment mine is `[master*][agero:crewu-bootcamp/site]`, but with colors!)
 
-`username` is replaced by the username of the current user. `host` is replaced by the name of the machine the shell is runnig on. `director` is replaced by the what is called the "present working directory"m, or PWD for short. (The command to view the PWD is `pwd` by the way. Go figure.)
+In this example, `username` is replaced by the username of the current user; `host` is replaced by the name of the machine the shell is running on; `directory` is replaced by the what is called the "present working directory", or PWD for short. (The command to view the PWD is `pwd` by the way. Go figure.)
 
 The shell is always in some part of the file system. Where the shell is effects how certain file or programs are accessible.
 
 ## 1.2 Introduction to File Systems
 
-There are 2 objects, Files and Folders.
+File systems 2 objects, Files and Folders. (This is a lie. We cover that later.)
 
 These are arranged in a "tree" structure with folders containing more files &
 folders.
@@ -31,7 +32,7 @@ The root folder is located at `/`.
 A file path is the list of folders needed to arrive at a particular point in
 the tree: `/home/fakeuser/documents/classes/`.
 
-Your home directory is located at "/home/user". A shortcut for this is to use
+Your home directory is located at `/home/user`. A shortcut for this is to use
 `~`.
 
 ### A Couple More Things
