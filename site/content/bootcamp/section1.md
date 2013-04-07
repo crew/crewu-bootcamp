@@ -18,41 +18,35 @@ The `username@host:directory$` portion is called the prompt. It is completely cu
 
 In this example, `username` is replaced by the username of the current user; `host` is replaced by the name of the machine the shell is running on; `directory` is replaced by the what is called the "present working directory", or PWD for short. (The command to view the PWD is `pwd` by the way. Go figure.)
 
-The shell is always in some part of the file system. Where the shell is effects how certain file or programs are accessible.
+The shell always has a PWD. The PWD effects how certain file or programs are accessed.
 
 ## 1.2 Introduction to File Systems
 
 File systems 2 objects, Files and Folders. (This is a lie. We cover that later.)
 
-These are arranged in a "tree" structure with folders containing more files &
+These are arranged in a "tree" structure with folders containing more files and
 folders.
 
-The root folder is located at `/`.
+A locations in this tree are paths&mdash;a list of folders needed to arrive at a particular point in
+the tree; for example `/home/fakeuser/documents/classes/`. The root of this tree (which is called "root" or "slash") has the path `/`. Full paths are paths that start at the "root" of the file system ("/").
+Relative file paths are ones that start at the directory you are in.
 
-A file path is the list of folders needed to arrive at a particular point in
-the tree: `/home/fakeuser/documents/classes/`.
+Your home directory is located at `/home/username`. A shortcut for this is to use
+`~`. Path starting with `~` are also absolute.
 
-Your home directory is located at `/home/user`. A shortcut for this is to use
-`~`.
+### Special Folders and Files
+Unix file systems have 2 pseudo-folders `.` and `..` inside every folder; These are
+"this folder" and "the folder above" respectively. They are very helpful when
+needing to refer to folders or files that are near your current location in
+the file system, like when building a relative path.
 
-### A Couple More Things
+Unix file systems consider files and folders that start with a "." to be hidden, and will not show them unless specifically asked to. The folders `.` and `..` are examples of these kinds of folders. Configuration files are often hidden in this manor. Please note that if the PWD is inside a hidden folder, the contents of the folder are not considered hidden by default. The "." only hides the folder itself.
 
-Adding a drive (USB, or other) to a file system is called "mounting" this just
+### Mounting
+
+Adding a drive (USB, or other) to a file system is called "mounting." This just
 means that you add the drive as another branch on your tree at some point in
 the tree.
-
-Full paths are paths that start at the "root" of the file system ("/") and then
-go from there (you can use "~" to abbreviate if you would like.
-
-Relative file paths are ones that start at the directory you are in and go on
-from there.
-
-Unix file systems have 2 pseudo-folders inside every folder "." and ".." these are
-"this folder" and "the folder above" respectively. These are very helpful when
-needing to refer to folders or files that are near your current location in
-the file system.
-
-Unix file systems consider files and folders that start with a "." to be hidden, and will not show them unless specifically asked to. The folders "." and ".." are examples of these kinds of folders. Configuration files are often hidden in this manor. Please not that if the PWD is inside a hidden folder, the contents of the folder are not considered hidden by default. The "." only hides the folder itself.
 
 ## 1.3 Commands and Executing Programs
 
