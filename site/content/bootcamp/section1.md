@@ -48,7 +48,7 @@ Adding a drive (USB, or other) to a file system is called "mounting." This just
 means that you add the drive as another branch on your tree at some point in
 the tree.
 
-## 1.3 Commands and Executing Programs
+## 1.3 Executing Commands
 
 Lets take another look at the example prompt from before:
 
@@ -60,11 +60,11 @@ The command and its arguments are what a user typed in to get things done. A com
 
 Commands have flags, such as "-a" or "-r" these can be combined "-avz" or used
 separately "-avz -e" these flags alter the way that commands you enter into
-your shell operate.
+your shell operate. Often multi character flags start with "--" instead of "-". 
+For example, `ls` show the files and folders in the PWD except for hidden ones, and `ls -a` shows everything, including the hidden ones, which can be written `ls --all`.
 
 ### Shells
 
 There are several different shells that provide additional functionality to
 your Linux experience such as "tab completion" of commands and spell check. We
 will go into greater detail about shells later.
-
