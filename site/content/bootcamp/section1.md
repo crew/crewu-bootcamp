@@ -1,6 +1,6 @@
 # 1. Intro to the Terminal
 
-# 1.1 What is a Terminal (AKA you can skip this if you have ever used one before)
+## 1.1 What is a Terminal (AKA you can skip this if you have ever used one before)
 
 A terminal&mdash;in the simplest sense&mdash;is what text based applications run in;
 It displays all text you see on the screen.
